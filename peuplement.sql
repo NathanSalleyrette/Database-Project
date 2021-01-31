@@ -1,0 +1,236 @@
+
+INSERT INTO CategorieFilm VALUES('horreur');
+INSERT INTO CategorieFilm VALUES('fantastique');
+INSERT INTO CategorieFilm VALUES('amour');
+INSERT INTO CategorieFilm VALUES('action');
+
+
+
+
+
+INSERT INTO CATEGORIEMUSIQUE VALUES('rap');
+INSERT INTO CATEGORIEMUSIQUE VALUES('pop');
+INSERT INTO CATEGORIEMUSIQUE VALUES('electro');
+INSERT INTO CATEGORIEMUSIQUE VALUES('rock');
+INSERT INTO CATEGORIEMUSIQUE VALUES('classique');
+INSERT INTO CATEGORIEMUSIQUE VALUES('opera');
+INSERT INTO INSTRUMENTS VALUES('piano');
+INSERT INTO INSTRUMENTS VALUES('guitare');
+INSERT INTO INSTRUMENTS VALUES('voix');
+INSERT INTO INSTRUMENTS VALUES('violon');
+INSERT INTO INSTRUMENTS VALUES('flute');
+
+INSERT INTO Langues VALUES('français');
+INSERT INTO Langues VALUES('deutsch');
+INSERT INTO Langues VALUES('english');
+INSERT INTO Langues VALUES('español');
+INSERT INTO Langues VALUES('italiano');
+
+
+INSERT INTO Fichier VALUES(1,5000, '02-DEC-2020');
+INSERT INTO Fichier VALUES(2,10000, '01-DEC-2020');
+INSERT INTO Fichier VALUES(3,20000, '06-DEC-2020');
+INSERT INTO Fichier VALUES(4,20000, '06-DEC-2020');
+INSERT INTO Fichier VALUES(5,20000, '02-DEC-2020');
+INSERT INTO Fichier VALUES(6,15000, '03-NOV-2020');
+INSERT INTO Fichier VALUES(7,1500, '05-NOV-2020');
+INSERT INTO Fichier VALUES(8,15000, '03-NOV-2020');
+INSERT INTO Fichier VALUES(9,150, '03-NOV-1999');
+INSERT INTO Fichier VALUES(10,5000, '13-NOV-1999');
+
+
+
+
+INSERT INTO Film VALUES('ListOfLegend', 2020, 'resume complet', 18, 'legend.machintruc');
+INSERT INTO Film VALUES('titre2', 1999, 'resume de titre2', 0, 'url.titre2.url');
+
+INSERT INTO FilmACategoriesFilm VALUES('titre2', 1999, 'amour');
+INSERT INTO FilmACategoriesFilm VALUES('titre2', 1999, 'fantastique');
+INSERT INTO FilmACategoriesFilm VALUES('ListOfLegend', 2020, 'action');
+
+
+
+INSERT INTO Album VALUES(1, 'Musique1', 'Zimmer', '02-JAN-1998', 'url1Musique');
+INSERT INTO Album VALUES(2, 'Musique2', 'Led Zeppelin', '14-JUL-2004', 'url2Musique');
+INSERT INTO Album VALUES(3, 'Musique3', 'LinkinPark', '13-NOV-2010', 'url3Musique');
+
+
+
+INSERT INTO PisteMusicale VALUES(1, 'P1M1', 10, 1);
+INSERT INTO PisteMusicale VALUES(2, 'P1M2', 1, 1);
+INSERT INTO PisteMusicale VALUES(1, 'P2M1', 5, 2);
+INSERT INTO PisteMusicale VALUES(2, 'P2M2', 2, 2);
+INSERT INTO PisteMusicale VALUES(3, 'P2M3', 3, 2);
+INSERT INTO PisteMusicale VALUES(1, 'P3M1', 18, 3);
+
+
+
+
+
+
+INSERT INTO AlbumACategoriesMusique VALUES(1, 'classique');
+INSERT INTO AlbumACategoriesMusique VALUES(1, 'rock');
+INSERT INTO AlbumACategoriesMusique VALUES(2, 'classique');
+INSERT INTO AlbumACategoriesMusique VALUES(3, 'rap');
+
+
+INSERT INTO PisteMusicalACategoriesMusique VALUES(1, 'pop', 1);
+INSERT INTO PisteMusicalACategoriesMusique VALUES(1, 'classique', 2);
+INSERT INTO PisteMusicalACategoriesMusique VALUES(1, 'rap', 3);
+INSERT INTO PisteMusicalACategoriesMusique VALUES(2, 'rock', 1);
+INSERT INTO PisteMusicalACategoriesMusique VALUES(2, 'electro', 2);
+INSERT INTO PisteMusicalACategoriesMusique VALUES(3, 'opera', 2);
+
+
+
+INSERT INTO PisteContientFichiers VALUES(5, 3, 1);
+INSERT INTO PisteContientFichiers VALUES(4, 2, 3);
+INSERT INTO PisteContientFichiers VALUES(3, 2, 2);
+INSERT INTO PisteContientFichiers VALUES(2, 2, 1);
+INSERT INTO PisteContientFichiers VALUES(1, 1, 1);
+
+INSERT INTO CodecTexte VALUES('AQTitle');
+INSERT INTO CodecTexte VALUES('Kate');
+INSERT INTO CodecTexte VALUES('DKS');
+
+INSERT INTO CodecVideo VALUES('MPEG2');
+INSERT INTO CodecVideo VALUES('MPEG4');
+INSERT INTO CodecVideo VALUES('DivX');
+INSERT INTO CodecVideo VALUES('H264');
+
+INSERT INTO CodecAudio VALUES('MP3');
+INSERT INTO CodecAudio VALUES('MPEG4');
+INSERT INTO CodecAudio VALUES('ACC');
+INSERT INTO CodecAudio VALUES('AC3');
+
+
+
+INSERT INTO Flux VALUES(1, 1, 10000);
+INSERT INTO Flux VALUES(2, 1, 10000);
+INSERT INTO Flux VALUES(1, 2, 10000);
+INSERT INTO Flux VALUES(1, 3, 100);
+INSERT INTO Flux VALUES(2, 3, 100000);
+INSERT INTO Flux VALUES(1, 4, 20000);
+INSERT INTO Flux VALUES(1, 5, 1000);
+INSERT INTO Flux VALUES(1, 6, 100);
+INSERT INTO Flux VALUES(2, 6, 100);
+INSERT INTO Flux VALUES(3, 6, 100);
+INSERT INTO Flux VALUES(1, 7, 100);
+INSERT INTO Flux VALUES(2, 7, 100);
+INSERT INTO Flux VALUES(1, 8, 100);
+
+INSERT INTO Flux VALUES(1, 9, 1000);
+INSERT INTO Flux VALUES(1, 10, 1000);
+INSERT INTO Flux VALUES(2, 9, 1000);
+INSERT INTO Flux VALUES(2, 10, 1000);
+
+
+
+INSERT INTO FluxAudio VALUES(1, 1, 'français', 16, 'AC3');
+INSERT INTO FluxAudio VALUES(1, 2, 'español', 16, 'AC3');
+INSERT INTO FluxAudio VALUES(1, 3, 'deutsch', 24, 'MP3');
+INSERT INTO FluxAudio VALUES(1, 4, 'français', 24, 'MP3');
+INSERT INTO FluxAudio VALUES(1, 5, 'français', 24, 'MP3');
+INSERT INTO FluxAudio VALUES(1, 7, 'français', 32, 'MP3');
+INSERT INTO FluxAudio VALUES(2, 7, 'english', 32, 'MP3');
+INSERT INTO FluxAudio VALUES(2, 10, 'français', 32, 'MPEG4');
+
+
+
+
+INSERT INTO FluxTexte VALUES(2,1, 'français', 'AQTitle');
+INSERT INTO FluxTExte VALUES(2, 3, 'deutsch', 'AQTitle');
+INSERT INTO FluxTexte VALUES(1, 6, 'français', 'Kate');
+INSERT INTO FluxTexte VALUES(2, 6, 'español', 'Kate');
+INSERT INTO FluxTexte VALUES(3, 6, 'italiano', 'Kate');
+INSERT INTO FluxTexte VALUES(1, 9, 'français', 'DKS');
+INSERT INTO FluxTexte VALUES(2, 9, 'english', 'DKS');
+
+
+
+INSERT INTO FluxVideo VALUES(1, 8, 100, 100, 'DivX');
+INSERT INTO FluxVideo VALUES(1, 10, 200, 200, 'MPEG4');
+
+
+
+
+
+INSERT INTO ARTISTE VALUES(1, 'Petit', 'petit.18.9', 'jongleur');
+INSERT INTO ARTISTE VALUES(2, 'Simeon', 'cascade.sniper99', 'cascadeur');
+INSERT INTO ARTISTE VALUES(3, 'Johnny', 'JS.42', 'flutiste');
+INSERT INTO Artiste VALUES(4, 'Sy', 'omar.sy857', 'acteur');
+INSERT INTO Artiste VALUES(5, 'Depp', 'johnny.depp48', 'acteur');
+INSERT INTO Artiste VALUES(6, 'Girac', 'kendji.girac.87', 'guitariste');
+INSERT INTO ARTISTE VALUES(7, 'CardiB', 'Cardi-B.1212', 'chanteuse');
+INSERT INTO Artiste VALUES(8, 'Mozart', 'wolfgang.24', 'pianiste');
+INSERT INTO Artiste VALUES(9, 'Bennington', 'chester.bennington', 'chanteur');
+
+	INSERT INTO Biographie VALUES('1', 'biographie1');
+	INSERT INTO Biographie VALUES('3', 'biographie3');
+	INSERT INTO Biographie VALUES('4', 'biographie4');
+	INSERT INTO Biographie VALUES('5', 'biographie5');
+	INSERT INTO Biographie VALUES('6', 'biographie6');
+	INSERT INTO Biographie VALUES('9', 'biographie9');
+
+
+	INSERT INTO DateNaissanceArtiste VALUES('1', '01-DEC-1971');
+	INSERT INTO DateNaissanceArtiste VALUES('2', '02-DEC-1972');
+	INSERT INTO DateNaissanceArtiste VALUES('8', '08-DEC-1978');
+	INSERT INTO DateNaissanceArtiste VALUES('4', '04-DEC-1974');
+	INSERT INTO DateNaissanceArtiste VALUES('5', '05-DEC-1975');
+	INSERT INTO DateNaissanceArtiste VALUES('7', '07-DEC-1977');
+
+
+ INSERT INTO ACTEURS VALUES(1, 'Marcheur', 'titre2', 1999);
+ INSERT INTO ACTEURS VALUES(7, 'Ingé son', 'titre2', 1999);
+INSERT INTO ACTEURS VALUES(2, 'Chevalier', 'ListOfLegend', 2020);
+INSERT INTO ACTEURS VALUES(5, 'Pirate', 'ListOfLegend', 2020);
+INSERT INTO ACTEURS VALUES(3, 'Pompier', 'titre2', 1999);
+INSERT INTO ACTEURS VALUES(4, 'Prince charmant', 'ListOfLegend', 2020);
+
+
+INSERT INTO Musiciens VALUES('piano', 1, 1, 1);
+INSERT INTO Musiciens VALUES('piano', 1, 2, 1);
+
+INSERT INTO Musiciens VALUES('voix', 2, 1, 1);
+INSERT INTO Musiciens VALUES('voix', 2, 2, 1);
+
+INSERT INTO Musiciens VALUES('guitare', 2, 1, 2);
+INSERT INTO Musiciens VALUES('violon', 2, 2, 2);
+INSERT INTO Musiciens VALUES('guitare', 2, 3, 2);
+INSERT INTO Musiciens VALUES('guitare', 1, 1, 3);
+
+
+INSERT INTO FILMCONTIENTFICHIERS VALUES('ListOfLegend', 2020, 6);
+INSERT INTO FILMCONTIENTFICHIERS VALUES('ListOfLegend', 2020, 7);
+INSERT INTO FILMCONTIENTFICHIERS VALUES('ListOfLegend', 2020, 8);
+INSERT INTO FILMCONTIENTFICHIERS VALUES('titre2', 1999, 9);
+INSERT INTO FILMCONTIENTFICHIERS VALUES('titre2', 1999, 10);
+
+INSERT INTO PhotoFilm VALUES('ListOfLegend', 2020, 'photo1List');
+INSERT INTO PhotoFilm VALUES('ListOfLegend', 2020, 'photo2List');
+INSERT INTO PhotoFilm VALUES('ListOfLegend', 2020, 'photo3List');
+INSERT INTO PhotoFilm VALUES('titre2', 1999, 'photo1titre2');
+INSERT INTO PhotoFilm VALUES('titre2', 1999, 'photo2titre2');
+
+
+
+INSERT INTO LOGICIEL VALUES ('T1200 V-ZUV', 'CROSSCALL', 1080, 1920);
+INSERT INTO LOGICIEL VALUES ('ONE PLUS 5T', 'ONEPLUS', 600, 800);
+
+INSERT INTO LOGICIELAPOURCODECAUDIO VALUES ('ONE PLUS 5T', 'ONEPLUS', 'MP3');
+INSERT INTO LOGICIELAPOURCODECAUDIO VALUES ('ONE PLUS 5T', 'ONEPLUS', 'MPEG4');
+INSERT INTO LOGICIELAPOURCODECAUDIO VALUES ('ONE PLUS 5T', 'ONEPLUS', 'ACC');
+INSERT INTO LOGICIELAPOURCODECAUDIO VALUES ('T1200 V-ZUV', 'CROSSCALL', 'MP3');
+INSERT INTO LOGICIELAPOURCODECTEXTE VALUES ('ONE PLUS 5T', 'ONEPLUS', 'Kate');
+INSERT INTO LOGICIELAPOURCODECTEXTE VALUES ('ONE PLUS 5T', 'ONEPLUS', 'DKS');
+INSERT INTO LOGICIELAPOURCODECTEXTE VALUES ('T1200 V-ZUV', 'CROSSCALL', 'DKS');
+INSERT INTO LOGICIELAPOURCODECTEXTE VALUES ('T1200 V-ZUV', 'CROSSCALL', 'AQTitle');
+INSERT INTO LOGICIELAPOURCODECVIDEO VALUES ('T1200 V-ZUV', 'CROSSCALL', 'DivX');
+INSERT INTO LOGICIELAPOURCODECVIDEO VALUES ('T1200 V-ZUV', 'CROSSCALL', 'MPEG2');
+INSERT INTO LOGICIELAPOURCODECVIDEO VALUES ('ONE PLUS 5T', 'ONEPLUS', 'DivX');
+INSERT INTO LOGICIELAPOURCODECVIDEO VALUES ('ONE PLUS 5T', 'ONEPLUS', 'MPEG4');
+INSERT INTO LOGICIELAPOURCODECVIDEO VALUES ('ONE PLUS 5T', 'ONEPLUS', 'H264');
+
+
+INSERT INTO Utilisateur VALUES('Jean.m@gmail.com', 19, 'Miller', 'Jean', 'français', 1234);
