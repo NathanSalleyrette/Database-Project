@@ -1,2 +1,2 @@
-# Projet-Base-de-donnees
-Conception et gestion d'une base de données décrivant des flux audio, vidéo, texte
+# Database-Project
+Design and management of a database describing audio, video, text streams
